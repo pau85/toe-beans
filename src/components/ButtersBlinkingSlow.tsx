@@ -5,12 +5,12 @@ import frame3 from '../images/slowblinkingbutters/3buttersblinking.png'
 import frame4 from '../images/slowblinkingbutters/4buttersblinking.png'
 
 // Define the props for your component
-interface ButtersBlinkingProps {
+interface ButtersBlinkingSlowProps {
     frameCount: number; // Total number of frames in the animation
     frameRate: number; // Frames per second
   }
   
-  const ButtersBlinking: React.FC<ButtersBlinkingProps> = ({ frameCount, frameRate }) => {
+  const ButtersBlinkingSlow: React.FC<ButtersBlinkingSlowProps> = ({ frameCount, frameRate }) => {
     const [currentFrame, setCurrentFrame] = useState(1);
   
     useEffect(() => {
@@ -40,4 +40,4 @@ interface ButtersBlinkingProps {
     );
   };
   
-  export default ButtersBlinking;
+  export default ButtersBlinkingSlow;
