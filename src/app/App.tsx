@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import ButtersBlinking from '../components/ButtersBlinking';
+import ButtersBlinkingSlow from '../components/ButtersBlinkingSlow';
+import ButtersBlinkingQuick from '../components/ButtersBlinkingQuick';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
       </header>
-      <ButtersBlinking frameCount={1} frameRate={3} />
+      <ButtersBlinkingSlow frameCount={4} frameRate={3} />
+      <ButtersBlinkingQuick frameCount={4} frameRate={3} />
     </div>
   );
 }
