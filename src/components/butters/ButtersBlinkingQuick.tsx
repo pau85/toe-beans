@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import frame1 from '../images/slowblinkingbutters/1buttersblinking.png'
-import frame2 from '../images/slowblinkingbutters/2buttersblinking.png'
-import frame3 from '../images/slowblinkingbutters/3buttersblinking.png'
-import frame4 from '../images/slowblinkingbutters/4buttersblinking.png'
+import frame1 from '../../images/quickblinkingbutters/1buttersblinking.png'
+import frame4 from '../../images/quickblinkingbutters/4buttersblinking.png'
 
 // Define the props for your component
-interface ButtersBlinkingSlowProps {
+interface ButtersBlinkingQuickProps {
     frameCount: number; // Total number of frames in the animation
     frameRate: number; // Frames per second
   }
   
-  const ButtersBlinkingSlow: React.FC<ButtersBlinkingSlowProps> = ({ frameCount, frameRate }) => {
+  const ButtersBlinkingQuick: React.FC<ButtersBlinkingQuickProps> = ({ frameCount, frameRate }) => {
     const [currentFrame, setCurrentFrame] = useState(1);
   
     useEffect(() => {
@@ -27,10 +25,7 @@ interface ButtersBlinkingSlowProps {
     const getImageSrc = (frameNumber: number): string => {
       switch(frameNumber) {
         case 1: return frame1;
-        case 2: return frame2;
-        case 3: return frame3;
         case 4: return frame4;
-        // ...case for other frames
         default: return frame1;
       }
     };
@@ -40,4 +35,4 @@ interface ButtersBlinkingSlowProps {
     );
   };
   
-  export default ButtersBlinkingSlow;
+  export default ButtersBlinkingQuick;
