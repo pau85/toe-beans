@@ -1,0 +1,14 @@
+.clock-face {
+    position: relative;
+    z-index: 1;
+    top: 0; 
+    left: 0; 
+  }
+  
+  .hour-hand, .minute-hand {
+    position: absolute;
+    z-index: 2; 
+    top: 50%;
+    left: 50%;
+    transform-origin: center bottom;
+  }

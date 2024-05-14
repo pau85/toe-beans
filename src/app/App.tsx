@@ -16,9 +16,10 @@ function App() {
         <div className='butters-breathing-sleeping-torso'>
           <ButtersBreathingSleepingTorso />
         </div>
-        <div>
+        <div className='clock-with-hands'>
           <ClockWithHands />
         </div>
+      </div>
       <div>
         <div className='butters-blinking-slow'>
           <ButtersBlinkingSlow frameCount={4} frameRate={3} />
@@ -27,9 +28,6 @@ function App() {
           <ButtersBlinkingQuick frameCount={4} frameRate={3} />
         </div>
       </div>
-    </div>
-
-
     </div>
   );
 }
