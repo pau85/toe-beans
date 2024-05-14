@@ -1,14 +1,20 @@
 .clock-face {
     position: relative;
-    z-index: 1;
-    top: 0; 
-    left: 0; 
+    /* Other styles for the clock face */
   }
   
-  .hour-hand, .minute-hand {
+  .hand {
     position: absolute;
-    z-index: 2; 
-    top: 50%;
-    left: 50%;
-    transform-origin: center bottom;
+    bottom: 50%; /* Adjust as necessary */
+    left: 50%; /* Adjust as necessary */
+    transform-origin: 50% 100%; /* Pivot point at the bottom center */
+    /* Set width and height if not already set by the image */
+  }
+  
+  .hour-hand {
+    z-index: 3; /* Above the clock face and minute hand */
+  }
+  
+  .minute-hand {
+    z-index: 2; /* Above the clock face but below the hour hand */
   }

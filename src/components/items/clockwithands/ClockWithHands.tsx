@@ -32,13 +32,13 @@ const ClockWithHands = () => {
         className="hour-hand"
         style={{ transform: `rotate(${hourDegrees}deg)` }}
       >
-        <ClockHourHand />
+        <ClockHourHand hourDegrees={hourDegrees}/>
       </div>
       <div
         className="minute-hand"
         style={{ transform: `rotate(${minuteDegrees}deg)` }}
       >
-        <ClockMinuteHand />
+        <ClockMinuteHand minuteDegrees={minuteDegrees}/>
       </div>
     </div>
   );

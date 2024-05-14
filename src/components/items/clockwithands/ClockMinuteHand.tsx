@@ -1,16 +1,21 @@
 import React from 'react';
 import frame1 from '../../../images/items/clockwithhands/clock-minute-hand.png';
   
-  const ClockHourHand = () => {
-  
-    // Function to get the image source based on the current frame
-    const getImageSrc = () => {
-      return frame1;
-      }
+  type ClockMinuteHandProps = {
+    minuteDegrees: number;
+
+  }
+
+  const ClockMinuteHand = ({minuteDegrees} : ClockMinuteHandProps) => {
   
     return (
-      <img src={getImageSrc()} alt="clock-hour-hand" />
+<img
+  src={frame1}
+  className="hand minute-hand"
+  style={{ transform: `rotate(${minuteDegrees}deg)` }}
+  alt="minute Hand"
+/>
     );
   };
   
-  export default ClockHourHand;
+  export default ClockMinuteHand;
