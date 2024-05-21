@@ -1,5 +1,5 @@
 import React from 'react';
-import frame1 from '../../../images/items/clockwithhands/clock-hour-hand.png';
+import frame1 from '../../../images/items/clockwithhands/clock-minute-hand.png';
   
 type ClockHourHandProps = {
   hourDegrees: number;

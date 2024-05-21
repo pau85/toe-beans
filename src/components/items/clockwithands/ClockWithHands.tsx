@@ -1,45 +1,35 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import ClockFace from './ClockFace';
-import ClockHourHand from './ClockHourHand'
-import ClockMinuteHand from './ClockMinuteHand'
+import './clockwithhands.scss'
 
 const ClockWithHands = () => {
-  const [hourDegrees, setHourDegrees] = useState(0);
-  const [minuteDegrees, setMinuteDegrees] = useState(0);
-
-  useEffect(() => {
-    const updateClock = () => {
+    const hourHand = document.getElementById('hour-hand');
+    const minuteHand = document.getElementById('minute-hand');
+  
+    function updateClock() {
       const now = new Date();
-      const hour = now.getHours();
-      const minute = now.getMinutes();
-      const hourDegree = ((hour % 12) / 12) * 360 + (minute / 60) * 30;
-      const minuteDegree = minute * 6;
-
-      setHourDegrees(hourDegree);
-      setMinuteDegrees(minuteDegree);
-    };
-
-    const intervalId = setInterval(updateClock, 1000);
-
-    return () => clearInterval(intervalId);
-  }, []);
-
+      const seconds = now.getSeconds();
+      const minutes = now.getMinutes();
+      const hours = now.getHours();
+  
+      const minuteDegrees = ((minutes / 60) * 360) + ((seconds / 60) * 6) + 90;
+      const hourDegrees = ((hours / 12) * 360) + ((minutes / 60) * 30) + 90;
+      
+      if (minuteHand && hourHand){
+        minuteHand.style.transform = `rotate(${minuteDegrees}deg)`;
+        hourHand.style.transform = `rotate(${hourDegrees}deg)`;
+      }
+    }
+  
+    setInterval(updateClock, 1000);
+    updateClock(); // Initial call to set the positions
   return (
-    <div className="clock-face">
-      {/* Other clock elements */}
+    <div className="clock">
+    <span className="clock-face">
       <ClockFace />
-      <div
-        className="hour-hand"
-        style={{ transform: `rotate(${hourDegrees}deg)` }}
-      >
-        <ClockHourHand hourDegrees={hourDegrees}/>
-      </div>
-      <div
-        className="minute-hand"
-        style={{ transform: `rotate(${minuteDegrees}deg)` }}
-      >
-        <ClockMinuteHand minuteDegrees={minuteDegrees}/>
-      </div>
+    </span>
+    <span id="hour-hand" className="hand"></span>
+    <span id="minute-hand" className="hand"></span>
     </div>
   );
 };
