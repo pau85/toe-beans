@@ -1,34 +1,25 @@
 import React from 'react';
 import './App.css';
 // import ButtersBlinkingSlow from '../components/butters/ButtersBlinkingSlow';
-// import ButtersBlinkingQuick from '../components/butters/ButtersBlinkingQuick';
-// import ButtersSleeping from '../components/butters/ButtersSleeping'
-// import ButtersBreathingSleepingTorso from '../components/butters/ButtersBreathingSleepingTorso';
-import ClockWithHands from '../components/items/clockwithands/ClockWithHands';
+//import ButtersBlinkingQuick from '../components/butters/ButtersBlinkingQuick';
+import ButtersSleeping from '../components/butters/buttersSleepingModule/ButtersSleeping'
+import ButtersBreathingSleepingTorso from '../components/butters/buttersSleepingModule/ButtersBreathingSleepingTorso';
+import Butters, {ACTION_TYPES} from '../components/butters/Butters'
+
+//import ClockWithHands from '../components/items/clockwithands/ClockWithHands';
 
 function App() {
   return (
     <div>
-      <div>
-        {/* <div className='butters-sleeping'>
-          <ButtersSleeping />
-        </div>        
-        <div className='butters-breathing-sleeping-torso'>
+        <div className='butters-blinking-quick'>
+          <Butters action={ACTION_TYPES.BLINK} />
+          {/* <ButtersBlinkingQuick frameCount={4} frameRate={3} /> */}
+          {/* <ButtersSleeping /> */}
+        </div> 
+        {/* <div>
           <ButtersBreathingSleepingTorso />
         </div> */}
-        <div className='clock-with-hands'>
-          <ClockWithHands />
         </div>
-      </div>
-      <div>
-        {/* <div className='butters-blinking-slow'>
-          <ButtersBlinkingSlow frameCount={4} frameRate={3} />
-        </div>
-        <div className='butters-blinking-quick'>
-          <ButtersBlinkingQuick frameCount={4} frameRate={3} />
-        </div> */}
-      </div>
-    </div>
   );
 }
 
