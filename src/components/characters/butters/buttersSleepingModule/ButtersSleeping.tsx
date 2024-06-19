@@ -1,5 +1,6 @@
 import React from 'react';
-import frame1 from '../../../images/sleepingbutters/1-butters-sleeping.png';
+import frame1 from '../../../../images/sleepingbutters/1-butters-sleeping.png';
+import './butterssleeping.scss'
   
   const ButtersSleeping = () => {
   
@@ -9,7 +10,7 @@ import frame1 from '../../../images/sleepingbutters/1-butters-sleeping.png';
       }
   
     return (
-      <img src={getImageSrc()} alt="butters-schleeping" />
+      <img src={getImageSrc()} alt="butters-schleeping" className="butters-sleeping" />
     );
   };
   
