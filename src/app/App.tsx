@@ -3,6 +3,7 @@ import '../styles/App.scss';
 import ButtersSleeping from '../components/characters/butters/buttersSleepingModule/ButtersSleeping';
 // import ClockWithHands from '../components/items/clockwithands/ClockWithHands';
 import LivingRoom from '../components/backgroundImages/LivingRoom';
+import DiningRoom from '../components/backgroundImages/DiningRoom'
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
       </div> */}
       <div className="livingroom">
         <LivingRoom />
+      </div>
+      <div className="diningroom">
+        <DiningRoom />
       </div>
       <div className="butters-character">
         <ButtersSleeping />
