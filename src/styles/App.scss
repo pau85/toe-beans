@@ -20,12 +20,18 @@
 .butters-character {
   position: absolute;
   z-index: 1;
-  top: 900px;
+  top: 1600px;
+  left: 1200px;
 }
 
 .diningroom {
   position: absolute;
-  z-index: -1;
+  z-index: 0;
+}
+
+.livingroom {
+  position: absolute;
+  z-index: 1;  // Ensure this is higher than the diningroom z-index
 }
 
 // .clock-item {
