@@ -1,0 +1,30 @@
+body {
+    position: relative;
+    overflow: hidden;
+}
+
+.livingroom-background, .middlelighting-background, .diningroom-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.livingroom-background {
+    background-image: url('C:/Users/paule/projects/toe-beans-project/toe-beans/src/images/backgroundImages/livingroom-background-with-couch.png');
+}
+
+.middlelighting-background {
+    background-image: url('C:/Users/paule/projects/toe-beans-project/toe-beans/src/images/backgroundImages/middle-lighting.png');
+    animation: move-lighting 60s linear infinite;
+}
+
+.diningroom-background {
+    background-image: url('C:/Users/paule/projects/toe-beans-project/toe-beans/src/images/backgroundImages/dining-room.png');
+}
+
+@keyframes move-lighting {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+  }
