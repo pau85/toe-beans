@@ -16,13 +16,24 @@
 //   z-index: 2;
 // }
 
-
-.butters-character {
+.butters-character-sleeping {
   position: absolute;
-  z-index: 1;
+  z-index: 2; /* Higher value to appear on top */
   top: 1600px;
   left: 1200px;
 }
+
+.butters-character-breathing {
+  position: absolute;
+  z-index: 1; /* Lower value to appear below */
+  top: 1330px;
+  left: 730px;
+}
+
+.butters-character-breathing {
+  transform: scale(0.5);
+}
+
 
 .diningroom {
   position: absolute;
@@ -31,9 +42,8 @@
 
 .livingroom {
   position: absolute;
-  z-index: 1;  // Ensure this is higher than the diningroom z-index
+  z-index: 1;
 }
-
 // .clock-item {
 //   bottom: 1800px;
 // }
