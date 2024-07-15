@@ -5,8 +5,14 @@ import ButtersSleeping from '../components/characters/butters/buttersSleepingMod
 import LivingRoom from '../components/backgroundImages/LivingRoom';
 import DiningRoom from '../components/backgroundImages/DiningRoom'
 import ButtersBreathingSleepingTorso from '../components/characters/butters/buttersSleepingModule/ButtersBreathingSleepingTorso';
+import SunlightService from '../services/sunlightService/SunlightService'
 
 function App() {
+
+  const sunlightService = new SunlightService()
+
+  getLightLevel()
+
   return (
     <div>
       {/* <div className="clock-item">
