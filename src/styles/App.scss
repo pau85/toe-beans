@@ -1,0 +1,50 @@
+/* .butters-sleeping {
+  position: absolute;
+  z-index: 2;
+  top: 0; 
+  left: 0; 
+}
+
+.butters-breathing-sleeping-torso {
+  position: relative;
+  z-index: 1; 
+} */
+
+
+// .clock-item, .butters-character {
+//   position: absolute;
+//   z-index: 2;
+// }
+
+.butters-character-sleeping {
+  position: absolute;
+  z-index: 2; /* Higher value to appear on top */
+  top: 1600px;
+  left: 1200px;
+}
+
+.butters-character-breathing {
+  position: absolute;
+  z-index: 1; /* Lower value to appear below */
+  top: 1330px;
+  left: 730px;
+}
+
+.butters-character-breathing {
+  transform: scale(0.5);
+}
+
+
+.diningroom {
+  position: absolute;
+  z-index: 0;
+}
+
+.livingroom {
+  position: absolute;
+  z-index: 1;
+}
+// .clock-item {
+//   bottom: 1800px;
+// }
+

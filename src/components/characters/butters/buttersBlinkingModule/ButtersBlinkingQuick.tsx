@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import frame1 from '../../images/quickblinkingbutters/1buttersblinking.png'
-import frame4 from '../../images/quickblinkingbutters/4buttersblinking.png'
+import frame1 from 'toe-bean-frames/Completed/images/butters/quickblinkingbutters/1buttersblinking.png'
+import frame4 from 'toe-bean-frames/Completed/images/butters/quickblinkingbutters/4buttersblinking.png'
 
 // Define the props for your component
 interface ButtersBlinkingQuickProps {

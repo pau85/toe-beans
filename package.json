@@ -16,6 +16,7 @@
     "react-scripts": "5.0.1",
     "toe-bean-characters-llm": "github:pau85/toe-bean-characters-llm",
     "toe-bean-frames": "github:pau85/toe-bean-frames",
+    "sunlight-service": "github:pau85/sunlight-service",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },

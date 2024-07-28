@@ -1,6 +1,7 @@
 import React from 'react';
-import frame1 from '../../images/sleepingbutters/1-butters-sleeping.png';
-  
+import frame1 from '../../../../images/sleepingbutters/1-butters-sleeping.png';
+import '../../../../styles/butterssleeping.scss'
+
   const ButtersSleeping = () => {
   
     // Function to get the image source based on the current frame
@@ -9,7 +10,7 @@ import frame1 from '../../images/sleepingbutters/1-butters-sleeping.png';
       }
   
     return (
-      <img src={getImageSrc()} alt="butters-schleeping" />
+      <img src={getImageSrc()} alt="butters-schleeping" className="butters-sleeping" />
     );
   };
   
