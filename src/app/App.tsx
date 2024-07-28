@@ -11,6 +11,8 @@ function App() {
 
   const sunlightService = new SunlightService(5)
 
+  console.log('in app after sunlightService', sunlightService)
+
   return (
     <div>
       {/* <div className="clock-item">

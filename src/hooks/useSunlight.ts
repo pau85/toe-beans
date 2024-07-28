@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
-import { getLightLevel } from '../services/sunlightService/SunlightService'
+import { getLightRay } from '../services/sunlightService/SunlightService'
 
 export async function useSunlight(hour: number) {
-    const [lightLevel, setLightLevel] = useState(await getLightLevel(hour));
+    const [lightLevel, setLightLevel] = useState(await getLightRay(hour));
 
     useEffect(() => {
         const fetchSunlight = async () => {
