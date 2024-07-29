@@ -1,6 +1,7 @@
 import React from 'react';
 import SunshineRayDisplay from '../../../node_modules/sunlight-service/src/components/Sunshine/SunshineRayDisplay';
 
+
 export class SunlightService {
 
     hour: number
