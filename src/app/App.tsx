@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.scss';
+import '../styles/App.scss';
 // import ButtersBlinkingSlow from '../components/butters/ButtersBlinkingSlow';
 // import ButtersBlinkingQuick from '../components/butters/ButtersBlinkingQuick';
 import ButtersSleeping from '../components/butters/ButtersSleeping'
