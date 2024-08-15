@@ -2,8 +2,8 @@ import React from 'react';
 import '../styles/App.scss';
 // import ButtersBlinkingSlow from '../components/butters/ButtersBlinkingSlow';
 // import ButtersBlinkingQuick from '../components/butters/ButtersBlinkingQuick';
-import ButtersSleeping from '../components/butters/ButtersSleeping'
-import ButtersBreathingSleepingTorso from '../components/butters/ButtersBreathingSleepingTorso';
+import ButtersSleeping from '../components/characters/butters/ButtersSleeping'
+import ButtersBreathingSleepingTorso from '../components/characters/butters/ButtersBreathingSleepingTorso';
 //import ClockWithHands from '../components/items/clockwithands/ClockWithHands';
 
 function App() {
