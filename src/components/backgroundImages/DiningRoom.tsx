@@ -1,6 +1,6 @@
 import React from 'react';
 import frame1 from '../../images/backgroundImages/dining-room.png';
-import '../../styles/Diningroom.scss'
+import '../../styles/DiningRoom.scss'
   const DiningRoom = () => {
   
     // Function to get the image source based on the current frame
