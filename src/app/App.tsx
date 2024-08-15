@@ -1,32 +1,29 @@
 import React from 'react';
 import '../styles/App.scss';
-// import ButtersBlinkingSlow from '../components/butters/ButtersBlinkingSlow';
-// import ButtersBlinkingQuick from '../components/butters/ButtersBlinkingQuick';
-import ButtersSleeping from '../components/characters/butters/ButtersSleeping'
-import ButtersBreathingSleepingTorso from '../components/characters/butters/ButtersBreathingSleepingTorso';
-//import ClockWithHands from '../components/items/clockwithands/ClockWithHands';
+import ButtersSleeping from '../components/characters/butters/buttersSleepingModule/ButtersSleeping';
+// import ClockWithHands from '../components/items/clockwithands/ClockWithHands';
+import LivingRoom from '../components/backgroundImages/LivingRoom';
+import DiningRoom from '../components/backgroundImages/DiningRoom'
+import ButtersBreathingSleepingTorso from '../components/characters/butters/buttersSleepingModule/ButtersBreathingSleepingTorso';
 
 function App() {
+
   return (
     <div>
-      <div>
-        <div className='butters-sleeping'>
-          <ButtersSleeping />
-        </div>        
-        <div className='butters-breathing-sleeping-torso'>
-          <ButtersBreathingSleepingTorso />
-        </div>
-        {/* <div className='clock-with-hands'>
-          <ClockWithHands />
-        </div> */}
+      {/* <div className="clock-item">
+        <ClockWithHands />
+      </div> */}
+      <div className="livingroom">
+        <LivingRoom />
       </div>
-      <div>
-        {/* <div className='butters-blinking-slow'>
-          <ButtersBlinkingSlow frameCount={4} frameRate={3} />
-        </div>
-        <div className='butters-blinking-quick'>
-          <ButtersBlinkingQuick frameCount={4} frameRate={3} />
-        </div> */}
+      <div className="diningroom">
+        <DiningRoom />
+      </div>
+      <div className="butters-character-breathing">
+        <ButtersBreathingSleepingTorso />
+      </div>
+      <div className="butters-character-sleeping">
+        <ButtersSleeping />
       </div>
     </div>
   );
