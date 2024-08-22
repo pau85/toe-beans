@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.cd436501.css",
-    "main.js": "/static/js/main.7344c14d.js",
-    "static/media/1-butters-sleeping.png": "/static/media/1-butters-sleeping.5c5c81968de5a0f05bb9.png",
-    "static/media/2-butters-sleeping.png": "/static/media/2-butters-sleeping.d9902cef96995f4c2f25.png",
-    "static/media/livingroom-background-with-couch.png": "/static/media/livingroom-background-with-couch.d07422474ad7aa44a478.png",
-    "static/media/middle-lighting.png": "/static/media/middle-lighting.6f8da51f82722b73d6ba.png",
-    "static/media/dining-room.png": "/static/media/dining-room.e7ae6006d4b0cf2d9012.png",
-    "index.html": "/index.html",
-    "main.cd436501.css.map": "/static/css/main.cd436501.css.map",
-    "main.7344c14d.js.map": "/static/js/main.7344c14d.js.map"
+    "main.css": "/toe-beans/static/css/main.c0723022.css",
+    "main.js": "/toe-beans/static/js/main.6fd99ffa.js",
+    "static/media/1-butters-sleeping.png": "/toe-beans/static/media/1-butters-sleeping.5c5c81968de5a0f05bb9.png",
+    "static/media/2-butters-sleeping.png": "/toe-beans/static/media/2-butters-sleeping.d9902cef96995f4c2f25.png",
+    "static/media/livingroom-background-with-couch.png": "/toe-beans/static/media/livingroom-background-with-couch.d07422474ad7aa44a478.png",
+    "static/media/middle-lighting.png": "/toe-beans/static/media/middle-lighting.6f8da51f82722b73d6ba.png",
+    "static/media/dining-room.png": "/toe-beans/static/media/dining-room.e7ae6006d4b0cf2d9012.png",
+    "index.html": "/toe-beans/index.html",
+    "main.c0723022.css.map": "/toe-beans/static/css/main.c0723022.css.map",
+    "main.6fd99ffa.js.map": "/toe-beans/static/js/main.6fd99ffa.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd436501.css",
-    "static/js/main.7344c14d.js"
+    "static/css/main.c0723022.css",
+    "static/js/main.6fd99ffa.js"
   ]
 }
