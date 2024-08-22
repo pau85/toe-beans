@@ -44,6 +44,12 @@ Updates:
 7/6/2024
 ![image](https://github.com/pau85/toe-beans/assets/13775441/1c0198f2-4e72-4521-b8eb-72ac7b4b4656)
 
+8/22/2024
+Sorry its been a while since the last update. I had a wedding party to plan (I got married!) and then I ran into some errors when trying to test and then I realized I needed to add more configurations and dependencies for my project. I also added a clock! It so far only starts at 12:00 each time it is rendered. 
+![image](https://github.com/user-attachments/assets/34f3dc4d-c07a-42cf-9016-4b468f767e78)
+
+So the next update will be adding the real-time to it so it will display the current time of day based on timezone selection.
+
 
 ## Learn More
 
