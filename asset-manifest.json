@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cd436501.css",
+    "main.js": "/static/js/main.92f8d8fe.js",
+    "static/media/1-butters-sleeping.png": "/static/media/1-butters-sleeping.5c5c81968de5a0f05bb9.png",
+    "static/media/2-butters-sleeping.png": "/static/media/2-butters-sleeping.d9902cef96995f4c2f25.png",
+    "static/media/livingroom-background-with-couch.png": "/static/media/livingroom-background-with-couch.d07422474ad7aa44a478.png",
+    "static/media/middle-lighting.png": "/static/media/middle-lighting.6f8da51f82722b73d6ba.png",
+    "static/media/dining-room.png": "/static/media/dining-room.e7ae6006d4b0cf2d9012.png",
+    "index.html": "/index.html",
+    "main.cd436501.css.map": "/static/css/main.cd436501.css.map",
+    "main.92f8d8fe.js.map": "/static/js/main.92f8d8fe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cd436501.css",
+    "static/js/main.92f8d8fe.js"
+  ]
+}
