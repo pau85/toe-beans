@@ -5,7 +5,7 @@ import ButtersSleeping from '../components/characters/butters/buttersSleepingMod
 import LivingRoom from '../components/backgroundImages/LivingRoom';
 import DiningRoom from '../components/backgroundImages/DiningRoom'
 import ButtersBreathingSleepingTorso from '../components/characters/butters/buttersSleepingModule/ButtersBreathingSleepingTorso';
-
+import Clock from '../components/items/clockwithands/clock'
 function App() {
 
   return (
@@ -19,6 +19,7 @@ function App() {
       <div className="diningroom">
         <DiningRoom />
       </div>
+      <div className="full-clock"><Clock /></div>
       <div className="butters-character-breathing">
         <ButtersBreathingSleepingTorso />
       </div>

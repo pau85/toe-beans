@@ -1,0 +1,102 @@
+$scale: 1.75;
+$clock-size: 200px * $scale;
+$clock-border: 5px * $scale solid green;
+$clock-color: red;
+$clock-bg-color: black;
+
+.clock {
+	position: relative;
+	width: $clock-size;
+	height: $clock-size;
+	border: $clock-border;
+	border-radius: 50%;
+	margin: 50px auto;
+	color: $clock-color;
+	background-color: $clock-bg-color;
+
+	.number {
+		position: absolute;
+		width: 100px * $scale;
+		height: 100px * $scale;
+		text-align: center;
+		line-height: 50px * $scale;
+		font-weight: bold;
+		font-size: 20px * $scale;
+	}
+
+	.number3 {
+		bottom: 25px * $scale;
+		left: 140px * $scale;
+	}
+
+	.number6 {
+		top: 165px * $scale;
+		left: 50px * $scale;
+	}
+
+	.number9 {
+		bottom: 25px * $scale;
+		left: -40px * $scale;
+	}
+
+	.number12 {
+		top: -15px * $scale; 
+		left: 50px * $scale;
+	}
+
+	.hand {
+		position: absolute;
+		bottom: 50%;
+		left: 50%;
+		transform-origin: 50% 100%;
+		background: yellow;
+
+		&.hour {
+			width: 4px * $scale;
+			height: 50px * $scale;
+			transform: translateX(-50%) rotate(0deg);
+			animation: hourSpin 43200s linear infinite;
+		}
+
+		&.minute {
+			width: 3px * $scale;
+			height: 70px * $scale;
+			transform: translateX(-50%) rotate(0deg);
+			animation: minuteSpin 3600s linear infinite;
+		}
+
+		&.second {
+			width: 2px * $scale;
+			height: 80px * $scale;
+			transform: translateX(-50%) rotate(0deg);
+			animation: secondSpin 60s steps(60) infinite;
+		}
+	}
+}
+
+@keyframes hourSpin {
+	from {
+		transform: translateX(-50%) rotate(0deg);
+	}
+	to {
+		transform: translateX(-50%) rotate(360deg);
+	}
+}
+
+@keyframes minuteSpin {
+	from {
+		transform: translateX(-50%) rotate(0deg);
+	}
+	to {
+		transform: translateX(-50%) rotate(360deg);
+	}
+}
+
+@keyframes secondSpin {
+	from {
+		transform: translateX(-50%) rotate(0deg);
+	}
+	to {
+		transform: translateX(-50%) rotate(360deg);
+	}
+}
