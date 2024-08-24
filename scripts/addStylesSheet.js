@@ -3,7 +3,7 @@ const path = require('path');
 const readline = require('readline')
 
 // Directory with your .scss files
-const scssStylesDir = '../src/styles/';
+const scssStylesDir = './src/styles/';
 
 const scssDirs = [scssStylesDir]
 
@@ -23,7 +23,7 @@ async function processFiles() {
         let extension = path.extname(file)
 
         let fileAlreadyAdded = await isFileAlreadyAdded(dirpath + filename + extension)
-        console.log('fileAlreadyAdded: ', fileAlreadyAdded)
+        console.log(`fileAlreadyAdded - '${filename}'.scss : `, fileAlreadyAdded)
         if (fileAlreadyAdded === false) {
           dirpath = scssDir
           extension = path.extname(file)
@@ -40,8 +40,9 @@ async function processFiles() {
       fs.appendFileSync(path.join(scssDir, 'styles.scss'), content);
       console.log('styles.scss has been updated!');
     } else {
-      console.log('No new .scss files to compile in "' +scssDir+'"!');
+      console.log('No new .scss files to added to "' +scssDir+'"!');
     }
+    console.log('Compiling all scss files with gulp next.')
   }
 }
 
@@ -49,7 +50,7 @@ processFiles();
 
 function isFileAlreadyAdded(filename) {
   return new Promise((resolve, reject) => {  
-    const fileStream = fs.createReadStream('../src/styles/styles.scss');
+    const fileStream = fs.createReadStream(scssStylesDir + 'styles.scss');
 
     // Use readline to read from the stream
     const rl = readline.createInterface({
