@@ -18,11 +18,13 @@ function App() {
           <DiningRoom />
         </div>
         <div className="full-clock"><Clock /></div>
-        <div className="butters-character-breathing">
-          <ButtersBreathingSleepingTorso />
-        </div>
-        <div className="butters-character-sleeping">
-          <ButtersSleeping />
+        <div className='butters'>
+          <div className="butters-character-breathing">
+            <ButtersBreathingSleepingTorso />
+          </div>
+          <div className="butters-character-sleeping">
+            <ButtersSleeping />
+          </div>
         </div>
       </div>
     </Router>

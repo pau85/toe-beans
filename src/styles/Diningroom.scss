@@ -1,8 +1,9 @@
+$scale: 1.1;
 
 .dining-room {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh; // or any desired height
+    width: 100% * $scale;
+    height: 100vh * $scale; // or any desired height
   }

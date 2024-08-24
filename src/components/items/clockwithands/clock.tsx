@@ -1,5 +1,5 @@
 import React from 'react';
-import './../../../styles/clock/clock.scss';
+import './../../../styles/clock.scss';
 
 const Clock = () => {
   return (
