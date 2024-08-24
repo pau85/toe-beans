@@ -3,7 +3,7 @@ const path = require('path');
 const readline = require('readline')
 
 // Directory with your .scss files
-const scssStylesDir = './src/styles/';
+const scssStylesDir = '../src/styles/';
 
 const scssDirs = [scssStylesDir]
 
@@ -23,11 +23,13 @@ async function processFiles() {
         let extension = path.extname(file)
 
         let fileAlreadyAdded = await isFileAlreadyAdded(dirpath + filename + extension)
+        console.log('fileAlreadyAdded: ', fileAlreadyAdded)
         if (fileAlreadyAdded === false) {
           dirpath = scssDir
           extension = path.extname(file)
           // Add the @use directive
           content += `@use '${dirpath}${filename}${extension}';\n`;
+          console.log('content: ',content)
           newFilesAdded = true; // Update the flag
         }
       }
@@ -47,7 +49,7 @@ processFiles();
 
 function isFileAlreadyAdded(filename) {
   return new Promise((resolve, reject) => {  
-    const fileStream = fs.createReadStream('./src/styles/styles.scss');
+    const fileStream = fs.createReadStream('../src/styles/styles.scss');
 
     // Use readline to read from the stream
     const rl = readline.createInterface({
