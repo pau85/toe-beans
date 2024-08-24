@@ -1,0 +1,194 @@
+.full-clock {
+  position: absolute;
+  z-index: 3;
+  top: -25px;
+  right: 300px;
+}
+
+.butters-character-sleeping {
+  position: absolute;
+  z-index: 2; /* Higher value to appear on top */
+  top: 1600px;
+  left: 1200px;
+}
+
+.butters-character-breathing {
+  position: absolute;
+  z-index: 1; /* Lower value to appear below */
+  top: 1330px;
+  left: 730px;
+  transform: scale(0.5);
+}
+
+.butters-character-breathing {
+  transform: scale(0.5);
+}
+
+.diningroom {
+  position: absolute;
+  z-index: 0;
+}
+
+.livingroom {
+  position: absolute;
+  z-index: 1;
+}
+
+body {
+  background-color: navy;
+}
+
+.butters-sleeping {
+  width: 50%;
+  height: auto;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: navy;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-face .hours {
+  border: 4px solid #EFF7FF;
+  position: absolute;
+  height: 35%;
+  border-radius: 4px;
+  left: 97px;
+  top: 102px;
+  animation-duration: 43200s;
+  z-index: 2;
+}
+
+.clock-face .minutes {
+  border-radius: 4px;
+  border: 2px solid #EFF7FF;
+  position: absolute;
+  left: 99px;
+  top: 100px;
+  height: 45%;
+  animation-duration: 3600s;
+  z-index: 2;
+}
+
+.animate {
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.hand {
+  transform-origin: top center;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.dining-room {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.living-room {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 110%;
+  height: 110vh;
+}
+
+.clock {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 2.5px solid green;
+  border-radius: 50%;
+  margin: 50px auto;
+  color: red;
+  background-color: black;
+}
+.clock .number {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 25px;
+  font-weight: bold;
+  font-size: 10px;
+}
+.clock .number3 {
+  bottom: 12.5px;
+  left: 70px;
+}
+.clock .number6 {
+  top: 82.5px;
+  left: 25px;
+}
+.clock .number9 {
+  bottom: 12.5px;
+  left: -20px;
+}
+.clock .number12 {
+  top: -7.5px;
+  left: 25px;
+}
+.clock .hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: 50% 100%;
+  background: yellow;
+}
+.clock .hand.hour {
+  width: 2px;
+  height: 25px;
+  transform: translateX(-50%) rotate(0deg);
+  animation: hourSpin 43200s linear infinite;
+}
+.clock .hand.minute {
+  width: 1.5px;
+  height: 35px;
+  transform: translateX(-50%) rotate(0deg);
+  animation: minuteSpin 3600s linear infinite;
+}
+.clock .hand.second {
+  width: 1px;
+  height: 40px;
+  transform: translateX(-50%) rotate(0deg);
+  animation: secondSpin 60s steps(60) infinite;
+}
+
+@keyframes hourSpin {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+@keyframes minuteSpin {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+@keyframes secondSpin {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
