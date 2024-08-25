@@ -26,6 +26,16 @@
   transform: scale(0.5);
 }
 
+.diningroom {
+  position: absolute;
+  z-index: 0;
+}
+
+.livingroom {
+  position: absolute;
+  z-index: 1;
+}
+
 body {
   background-color: navy;
 }
@@ -36,8 +46,6 @@ body {
 }
 
 .dining-room {
-  position: absolute;
-  z-index: 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -46,8 +54,6 @@ body {
 }
 
 .living-room {
-  position: absolute;
-  z-index: 1;
   background-size: cover;
   background-repeat: no-repeat;
   width: 110%;
