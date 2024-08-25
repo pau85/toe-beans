@@ -39,6 +39,9 @@
   background-repeat: no-repeat;
   width: 110%;
   height: 110vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 .clock {
