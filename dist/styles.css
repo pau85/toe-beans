@@ -1,5 +1,5 @@
 .full-clock {
-  position: absolute;
+  position: relative;
   z-index: 3;
   top: -25px;
   right: 250px;
@@ -10,13 +10,12 @@
   top: 200px;
 }
 .butters .butters-character-sleeping {
-  position: absolute;
+  position: relative;
   z-index: 2; /* Higher value to appear on top */
 }
 .butters .butters-character-breathing {
-  position: absolute;
+  position: relative;
   z-index: 1; /* Lower value to appear below */
-  top: 500px;
   transform: scale(0.5);
 }
 .butters .butters-character-breathing {
