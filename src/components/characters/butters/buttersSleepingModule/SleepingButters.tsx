@@ -6,8 +6,12 @@ import ButtersSleeping from './ButtersSleeping';
   
     return (
         <div className='sleeping-butters'>
-            <div className='butters-sleeping'></div>
-            <div className='butters-breathing-sleeping-torso'></div>
+            <div className='butters-sleeping'>
+                <ButtersSleeping />
+            </div>
+            <div className='butters-breathing-sleeping-torso'>
+                <ButtersBreathingSleepingTorso />
+            </div>
         </div>
     );
   };
