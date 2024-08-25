@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
-import frame2 from '../../../../images/sleepingbutters/2-butters-sleeping.png';
+import frame2 from './sleepingbutters/2-butters-sleeping.png'
 import '../../../../styles/buttersbreathingsleepingtorso.scss';
 
 const ButtersBreathingSleepingTorso = () => {
