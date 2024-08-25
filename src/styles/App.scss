@@ -5,27 +5,10 @@
   right: 250px;
 }
 
-.butters {
-
-  // position:relative;
- //top: 200px;
-
-  .butters-character-sleeping {
-    // position: relative;
-    z-index: 2; /* Higher value to appear on top */
-    // top: 1600px;
-    // left: 1200px;
-  }
-
-  .butters-character-breathing {
-    // position: relative;
-    z-index: 1; /* Lower value to appear below */
-    ///** top: 1330px;
-    // left: 730px;
-    transform: scale(0.5);
-
-  }
-
+.sleeping-butters {
+  position:relative;
+  z-index: 3;
+  top: 200px;
 }
 .diningroom {
   position: absolute;

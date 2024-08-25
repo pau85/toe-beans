@@ -1,0 +1,15 @@
+.sleeping-butters {
+    position: relative;
+}
+
+.butters-sleeping {
+    position: relative;
+    z-index: 2;
+}
+
+.butters-breathing-sleeping-torso {
+    position: absolute;
+    z-index: 1;
+    top: 0; /* adjust as needed */
+    left: 0; /* adjust as needed */
+}

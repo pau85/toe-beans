@@ -1,6 +1,7 @@
 import React from 'react';
 import ButtersBreathingSleepingTorso from './ButtersBreathingSleepingTorso';
 import ButtersSleeping from './ButtersSleeping';
+import '../../../../styles/butterssleeping.scss'
 
   const SleepingButters = () => {
   
