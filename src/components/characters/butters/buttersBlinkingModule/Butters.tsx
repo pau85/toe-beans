@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ButtersBlinkingQuick from "./buttersBlinkingModule/ButtersBlinkingQuick"
+import ButtersBlinkingQuick from "./ButtersBlinkingQuick"
 
 // Define the type of actions your character can perform
 export const ACTION_TYPES = {
