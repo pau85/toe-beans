@@ -35,13 +35,11 @@
 }
 
 .living-room {
-  background-size: cover;
+  background-image: url("../images/backgroundImages/livingroom-background-with-couch.png");
   background-repeat: no-repeat;
-  width: 110%;
-  height: 110vh;
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
 .clock {
