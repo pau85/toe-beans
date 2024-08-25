@@ -16,6 +16,7 @@
 .butters .butters-character-breathing {
   position: absolute;
   z-index: 1; /* Lower value to appear below */
+  top: 500px;
   transform: scale(0.5);
 }
 .butters .butters-character-breathing {
