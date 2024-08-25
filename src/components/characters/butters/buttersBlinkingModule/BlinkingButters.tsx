@@ -24,7 +24,7 @@ interface ButtersProps {
 }
 
 // Character component
-const Butters: React.FC<ButtersProps> = ({ action, speed }) => {
+const BlinkingButters: React.FC<ButtersProps> = ({ action, speed }) => {
   // You can manage the state of the action here if needed
   const [currentAction, setCurrentAction] = useState(action);
   const [currentSpeed, setCurrentSpeed] = useState(speed || DEFAULT_SPEEDS[action]);
@@ -65,4 +65,4 @@ const Butters: React.FC<ButtersProps> = ({ action, speed }) => {
   );
 };
 
-export default Butters
+export default BlinkingButters
