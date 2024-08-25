@@ -1,11 +1,9 @@
 $scale: 1.1;
 
 .living-room {
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100% * $scale;
-    height: 100vh * $scale; // or any desired height
-    position: absolute;
-    top: 0px;
-    left: 0px;
+  background-image: url('../images/backgroundImages/livingroom-background-with-couch.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
   }
