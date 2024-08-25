@@ -5,12 +5,10 @@
   right: 250px;
 }
 
-.butters .butters-character-sleeping {
-  z-index: 2; /* Higher value to appear on top */
-}
-.butters .butters-character-breathing {
-  z-index: 1; /* Lower value to appear below */
-  transform: scale(0.5);
+.sleeping-butters {
+  position: relative;
+  z-index: 3;
+  top: 200px;
 }
 
 .diningroom {
