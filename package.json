@@ -27,12 +27,12 @@
     "compile:sass": "sass src/index.scss src/index.css",
     "watch:sass": "nodemon -e scss -x \"npm run compile:sass\"",
     "start-js": "react-scripts start",
-    "start": "concurrently \"node scripts/addStylesSheet.js\" gulp concurrently \"npm run watch:sass\" \"npm run start-js\"",
-    "build": "\"node scripts/addStylesSheet.js\" gulp react-scripts build",
-    "test": "\"node scripts/addStylesSheet.js\" gulp react-scripts test",
+    "start": "concurrently node scripts/addStylesSheet.js && gulp && npm run watch:sass && npm run start-js",
+    "build": "node scripts/addStylesSheet.js && gulp && react-scripts build",
+    "test": "node scripts/addStylesSheet.js && gulp && react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "\"node scripts/addStylesSheet.js\" gulp npm run build",
-    "deploy": "\"node scripts/addStylesSheet.js\" gulp gh-pages -d build"
+    "predeploy": "node scripts/addStylesSheet.js && gulp && npm run build",
+    "deploy": "node scripts/addStylesSheet.js && gulp && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
