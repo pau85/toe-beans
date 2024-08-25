@@ -5,9 +5,6 @@
   right: 250px;
 }
 
-.butters {
-  top: 200px;
-}
 .butters .butters-character-sleeping {
   z-index: 2; /* Higher value to appear on top */
 }
