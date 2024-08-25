@@ -12,14 +12,10 @@
 .butters .butters-character-sleeping {
   position: absolute;
   z-index: 2; /* Higher value to appear on top */
-  top: 1600px;
-  left: 1200px;
 }
 .butters .butters-character-breathing {
   position: absolute;
   z-index: 1; /* Lower value to appear below */
-  top: 1330px;
-  left: 730px;
   transform: scale(0.5);
 }
 .butters .butters-character-breathing {
