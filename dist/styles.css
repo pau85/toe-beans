@@ -48,7 +48,6 @@ body {
 .living-room {
   position: absolute;
   z-index: 1;
-  bottom: 100px;
   background-size: cover;
   background-repeat: no-repeat;
   width: 110%;
