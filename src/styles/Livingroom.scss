@@ -5,4 +5,7 @@ $scale: 1.1;
     background-repeat: no-repeat;
     width: 100% * $scale;
     height: 100vh * $scale; // or any desired height
+    position: absolute;
+    top: 0px;
+    left: 0px;
   }
