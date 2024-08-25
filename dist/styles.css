@@ -62,9 +62,9 @@ body {
 
 .clock {
   position: relative;
-  width: 180px;
-  height: 180px;
-  border: 4.5px solid green;
+  width: 160px;
+  height: 160px;
+  border: 4px solid green;
   border-radius: 50%;
   margin: 50px auto;
   color: red;
@@ -72,28 +72,28 @@ body {
 }
 .clock .number {
   position: absolute;
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   text-align: center;
-  line-height: 45px;
+  line-height: 40px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
 }
 .clock .number3 {
-  bottom: 22.5px;
-  left: 126px;
+  bottom: 20px;
+  left: 112px;
 }
 .clock .number6 {
-  top: 148.5px;
-  left: 45px;
+  top: 132px;
+  left: 40px;
 }
 .clock .number9 {
-  bottom: 22.5px;
-  left: -36px;
+  bottom: 20px;
+  left: -32px;
 }
 .clock .number12 {
-  top: -13.5px;
-  left: 45px;
+  top: -12px;
+  left: 40px;
 }
 .clock .hand {
   position: absolute;
@@ -103,20 +103,20 @@ body {
   background: yellow;
 }
 .clock .hand.hour {
-  width: 3.6px;
-  height: 45px;
+  width: 3.2px;
+  height: 40px;
   transform: translateX(-50%) rotate(0deg);
   animation: hourSpin 43200s linear infinite;
 }
 .clock .hand.minute {
-  width: 2.7px;
-  height: 63px;
+  width: 2.4px;
+  height: 56px;
   transform: translateX(-50%) rotate(0deg);
   animation: minuteSpin 3600s linear infinite;
 }
 .clock .hand.second {
-  width: 1.8px;
-  height: 72px;
+  width: 1.6px;
+  height: 64px;
   transform: translateX(-50%) rotate(0deg);
   animation: secondSpin 60s steps(60) infinite;
 }
