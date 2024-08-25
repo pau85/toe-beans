@@ -6,19 +6,13 @@
 }
 
 .butters {
-  position: relative;
   top: 200px;
 }
 .butters .butters-character-sleeping {
-  position: relative;
   z-index: 2; /* Higher value to appear on top */
 }
 .butters .butters-character-breathing {
-  position: relative;
   z-index: 1; /* Lower value to appear below */
-  transform: scale(0.5);
-}
-.butters .butters-character-breathing {
   transform: scale(0.5);
 }
 
