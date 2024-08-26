@@ -13,3 +13,9 @@ body {
   background-size: cover;
   background-position: center;
   }
+
+  @media (max-width: 600px) {
+    .living-room {
+      /* Styles for screens smaller than 600px */
+    }
+  }
