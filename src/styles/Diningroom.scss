@@ -1,9 +1,15 @@
-$scale: 1.1;
 
-.dining-room {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100% * $scale;
-    height: 100vh * $scale; // or any desired height
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.diningroom {
+  width: 100vw; /* This will make the div as wide as your viewport */
+  height: 100vh; /* This will make the div as tall as your viewport */
+  background-image: url('../images/backgroundImages/dining-room.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
   }
