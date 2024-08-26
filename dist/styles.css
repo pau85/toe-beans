@@ -1,8 +1,7 @@
 .full-clock {
-  position: relative;
-  z-index: 3;
-  top: -25px;
-  right: 250px;
+  position: absolute;
+  z-index: 2;
+  right: 21%;
 }
 
 .sleeping-butters {
@@ -62,45 +61,40 @@ body {
   background-position: center;
 }
 
-@media (max-width: 600px) {
-  .living-room {
-    /* Styles for screens smaller than 600px */
-  }
-}
 .clock {
   position: relative;
-  width: 100px;
-  height: 100px;
-  border: 2.5px solid green;
+  width: 70px;
+  height: 70px;
+  border: 1.75px solid green;
   border-radius: 50%;
-  margin: 50px auto;
+  margin: 10px auto;
   color: red;
   background-color: black;
 }
 .clock .number {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   text-align: center;
-  line-height: 25px;
+  line-height: 17.5px;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 7px;
 }
 .clock .number3 {
-  bottom: 12.5px;
-  left: 70px;
+  bottom: 8.75px;
+  left: 49px;
 }
 .clock .number6 {
-  top: 82.5px;
-  left: 25px;
+  top: 57.75px;
+  left: 17.5px;
 }
 .clock .number9 {
-  bottom: 12.5px;
-  left: -20px;
+  bottom: 8.75px;
+  left: -14px;
 }
 .clock .number12 {
-  top: -7.5px;
-  left: 25px;
+  top: -5.25px;
+  left: 17.5px;
 }
 .clock .hand {
   position: absolute;
@@ -110,20 +104,20 @@ body {
   background: yellow;
 }
 .clock .hand.hour {
-  width: 2px;
-  height: 25px;
+  width: 1.4px;
+  height: 17.5px;
   transform: translateX(-50%) rotate(0deg);
   animation: hourSpin 43200s linear infinite;
 }
 .clock .hand.minute {
-  width: 1.5px;
-  height: 35px;
+  width: 1.05px;
+  height: 24.5px;
   transform: translateX(-50%) rotate(0deg);
   animation: minuteSpin 3600s linear infinite;
 }
 .clock .hand.second {
-  width: 1px;
-  height: 40px;
+  width: 0.7px;
+  height: 28px;
   transform: translateX(-50%) rotate(0deg);
   animation: secondSpin 60s steps(60) infinite;
 }
