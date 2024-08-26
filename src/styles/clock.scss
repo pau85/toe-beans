@@ -1,4 +1,4 @@
-$scale: .5;
+$scale: .35;
 $clock-size: 200px * $scale;
 $clock-border: 5px * $scale solid green;
 $clock-color: red;
@@ -10,7 +10,7 @@ $clock-bg-color: black;
 	height: $clock-size;
 	border: $clock-border;
 	border-radius: 50%;
-	margin: 50px auto;
+	margin: 10px auto;
 	color: $clock-color;
 	background-color: $clock-bg-color;
 
