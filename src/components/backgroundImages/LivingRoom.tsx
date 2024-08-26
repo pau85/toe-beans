@@ -3,7 +3,7 @@ import '../../styles/Livingroom.scss'
   const LivingRoom = () => {
   
     return (
-      <div className="living-room">
+      <div className="livingroom">
       </div>
     );
   };

@@ -1,10 +1,10 @@
 import React from 'react';
 import { HashRouter as Router } from 'react-router-dom'; 
 import '../styles/App.scss';
-import LivingRoom from '../components/backgroundImages/LivingRoom';
-import DiningRoom from '../components/backgroundImages/DiningRoom'
-import Clock from '../components/items/clockwithands/clock'
-import SleepingButters from '../components/characters/butters/buttersSleepingModule/SleepingButters';
+import LivingRoom from '../components/backgroundImages/LivingRoom.tsx';
+import DiningRoom from '../components/backgroundImages/DiningRoom.tsx'
+import Clock from '../components/items/clockwithands/clock.tsx'
+import SleepingButters from '../components/characters/butters/buttersSleepingModule/SleepingButters.tsx';
 function App() {
 
   return (

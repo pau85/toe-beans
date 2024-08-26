@@ -1,6 +1,12 @@
-$scale: 1.1;
 
-.living-room {
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.livingroom {
+  width: 100vw; /* This will make the div as wide as your viewport */
+  height: 100vh; /* This will make the div as tall as your viewport */
   background-image: url('../images/backgroundImages/livingroom-background-with-couch.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
