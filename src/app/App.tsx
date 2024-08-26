@@ -13,13 +13,13 @@ function App() {
         <div className="livingroom">
           <LivingRoom />
         </div>
-        <div className="diningroom">
+        {/* <div className="diningroom">
           <DiningRoom />
         </div>
         <div className="full-clock"><Clock /></div>
         <div className='sleeping-butters'>
           <SleepingButters />
-        </div>
+        </div> */}
       </div>
     </Router>
   );
