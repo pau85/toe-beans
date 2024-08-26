@@ -4,7 +4,7 @@ import '../styles/App.scss';
 import LivingRoom from '../components/backgroundImages/LivingRoom.tsx';
 import DiningRoom from '../components/backgroundImages/DiningRoom.tsx'
 import Clock from '../components/items/clockwithands/clock.tsx'
-//import SleepingButters from '../components/characters/butters/buttersSleepingModule/SleepingButters.tsx';
+import SleepingButters from '../components/characters/butters/buttersSleepingModule/SleepingButters.tsx';
 function App() {
 
   return (
@@ -17,9 +17,9 @@ function App() {
           <DiningRoom />
         </div>
         <div className="full-clock"><Clock /></div>
-       {/*  <div className='sleeping-butters'>
+       <div className='sleeping-butters'>
           <SleepingButters />
-        </div> */} 
+        </div>
       </div>
     </Router>
   );

@@ -5,9 +5,8 @@
 }
 
 .sleeping-butters {
-  position: relative;
+  position: absolute;
   z-index: 3;
-  top: 300px;
 }
 
 .diningroom {
@@ -18,11 +17,6 @@
 .livingroom {
   position: absolute;
   z-index: 1;
-}
-
-.butters-sleeping {
-  width: 50%;
-  height: auto;
 }
 
 body {
