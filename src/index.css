@@ -12,16 +12,16 @@ body {
 }
 
 .livingroom-background {
-  background-image: url("/images/backgroundImages/livingroom-background-with-couch.png");
+  background-image: url("../public/images/backgroundImages/livingroom-background-with-couch.png");
 }
 
 .middlelighting-background {
-  background-image: url("/images/backgroundImages/middle-lighting.png");
+  background-image: url("../public/images/backgroundImages/middle-lighting.png");
   animation: move-lighting 60s linear infinite;
 }
 
 .diningroom-background {
-  background-image: url("/images/backgroundImages/dining-room.png");
+  background-image: url("../public/images/backgroundImages/dining-room.png");
 }
 
 /*# sourceMappingURL=index.css.map */

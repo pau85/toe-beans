@@ -4,7 +4,7 @@ import '../../../../styles/ButtersSleepingStill.scss'
   const ButtersSleepingStill = () => {
 
     return (
-      <img className="butters-sleeping-still" src='/images/sleepingbutters/1-butters-sleeping.png' alt="Butters Sleeping" />
+      <img className="butters-sleeping-still" src='public/images/sleepingbutters/1-butters-sleeping.png' alt="Butters Sleeping" />
     );
   };
   
