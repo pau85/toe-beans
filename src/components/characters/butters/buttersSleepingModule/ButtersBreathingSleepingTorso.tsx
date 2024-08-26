@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
-import frame2 from 'public/images/sleepingbutters/2-butters-sleeping.png'
+import frame2 from 'toe-bean-frames/Completed/images/butters/sleepingbutters/2-butters-sleeping.png'
+import '../../../../styles/ButtersBreathingSleepingTorso.scss'
 
 const ButtersBreathingSleepingTorso = () => {
   const controls = useAnimation();
@@ -14,7 +15,7 @@ const ButtersBreathingSleepingTorso = () => {
   }, [controls]);
 
   return (
-    <motion.img
+    <motion.img className='butters-breathing-sleeping-torso'
       src={frame2}
       animate={controls}
       alt="Butters schleeping"

@@ -5,9 +5,13 @@
 }
 
 .sleeping-butters {
-  position:absolute;
+  position:relative;
   z-index: 3;
+  left: 30%;
+  top:575px;
+
 }
+
 .diningroom {
   position: absolute;
   z-index: 0;

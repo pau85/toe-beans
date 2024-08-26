@@ -1,16 +1,15 @@
-.sleeping-butters {
-    position: relative;
-    width: 500px;
-    height: 500px;
-}
+body {
+    margin: 0;
+    padding: 0;
+  }
 
-.butters-sleeping {
+
+.butters-sleeping-part1 {
     position: absolute;
-    top: 0;
-    bottom: 0;
+
 }
 
-.butters-breathing-sleeping-torso {
-    z-index: 1;
+.butters-breathing-sleeping-torso-part2{
+    position: absolute;
+    top: 20%;
 }
-
