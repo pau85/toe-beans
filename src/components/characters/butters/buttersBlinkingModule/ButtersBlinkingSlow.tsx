@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import frame1 from '../../images/slowblinkingbutters/1buttersblinking.png'
-import frame2 from '../../images/slowblinkingbutters/2buttersblinking.png'
-import frame3 from '../../images/slowblinkingbutters/3buttersblinking.png'
-import frame4 from '../../images/slowblinkingbutters/4buttersblinking.png'
+import frame1 from '/images/slowblinkingbutters/1buttersblinking.png'
+import frame2 from '/images/slowblinkingbutters/2buttersblinking.png'
+import frame3 from '/images/slowblinkingbutters/3buttersblinking.png'
+import frame4 from '/images/slowblinkingbutters/4buttersblinking.png'
 
 // Define the props for your component
 interface ButtersBlinkingSlowProps {
