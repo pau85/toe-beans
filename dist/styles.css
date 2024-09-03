@@ -104,22 +104,22 @@ body {
   width: 1.2px;
   height: 15px;
   transform: translateX(-50%) rotate(0deg);
-  animation: hourSpin 43200s linear infinite;
+  animation: defaultHourSpin 43200s linear infinite;
 }
 .clock .hand.minute {
   width: 0.9px;
   height: 21px;
   transform: translateX(-50%) rotate(0deg);
-  animation: minuteSpin 3600s linear infinite;
+  animation: defaultMinuteSpin 3600s linear infinite;
 }
 .clock .hand.second {
   width: 0.6px;
   height: 24px;
   transform: translateX(-50%) rotate(0deg);
-  animation: secondSpin 60s steps(60) infinite;
+  animation: defaultSecondSpin 60s steps(60) infinite;
 }
 
-@keyframes hourSpin {
+@keyframes defaultHourSpin {
   from {
     transform: translateX(-50%) rotate(0deg);
   }
@@ -127,7 +127,7 @@ body {
     transform: translateX(-50%) rotate(360deg);
   }
 }
-@keyframes minuteSpin {
+@keyframes defaultMinuteSpin {
   from {
     transform: translateX(-50%) rotate(0deg);
   }
@@ -135,7 +135,7 @@ body {
     transform: translateX(-50%) rotate(360deg);
   }
 }
-@keyframes secondSpin {
+@keyframes defaultSecondSpin {
   from {
     transform: translateX(-50%) rotate(0deg);
   }

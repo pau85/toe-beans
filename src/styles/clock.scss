@@ -54,49 +54,63 @@ $clock-bg-color: black;
 		&.hour {
 			width: 4px * $scale;
 			height: 50px * $scale;
-			transform: translateX(-50%) rotate(0deg);
-			animation: hourSpin 43200s linear infinite;
+			// transform: translateX(-50%) rotate(0deg);
+			animation: dynamicHourSpin 43200s linear infinite;
 		}
 
 		&.minute {
 			width: 3px * $scale;
 			height: 70px * $scale;
-			transform: translateX(-50%) rotate(0deg);
-			animation: minuteSpin 3600s linear infinite;
+			animation: dynamicMinuteSpin 3600s linear infinite;
 		}
 
 		&.second {
 			width: 2px * $scale;
 			height: 80px * $scale;
-			transform: translateX(-50%) rotate(0deg);
-			animation: secondSpin 60s steps(60) infinite;
+			animation: dynamicSecondSpin 60s steps(60) infinite;
+		}
+
+		&.dynamicHourSpin {
+			animation: dynamicHourSpin 43200s linear infinite;
+		}
+	  
+		&.dynamicMinuteSpin {
+			animation: dynamicMinuteSpin 3600s linear infinite;
+		}
+	  
+		&.dynamicSecondSpin {
+			animation: dynamicSecondSpin 60s steps(60) infinite;
 		}
 	}
 }
 
-@keyframes hourSpin {
-	from {
-		transform: translateX(-50%) rotate(0deg);
-	}
-	to {
-		transform: translateX(-50%) rotate(360deg);
-	}
-}
+// Clock usage options
 
-@keyframes minuteSpin {
-	from {
-		transform: translateX(-50%) rotate(0deg);
-	}
-	to {
-		transform: translateX(-50%) rotate(360deg);
-	}
-}
+//default - all hands start at 12:00
+// @keyframes defaultHourSpin {
 
-@keyframes secondSpin {
-	from {
-		transform: translateX(-50%) rotate(0deg);
-	}
-	to {
-		transform: translateX(-50%) rotate(360deg);
-	}
-}
+// 	from {
+// 		transform: translateX(-50%) rotate(0deg);
+// 	}
+// 	to {
+// 		transform: translateX(-50%) rotate(360deg);
+// 	}
+// }
+
+// @keyframes defaultMinuteSpin {
+// 	from {
+// 		transform: translateX(-50%) rotate(0deg);
+// 	}
+// 	to {
+// 		transform: translateX(-50%) rotate(360deg);
+// 	}
+// }
+
+// @keyframes defaultSecondSpin {
+// 	from {
+// 		transform: translateX(-50%) rotate(0deg);
+// 	}
+// 	to {
+// 		transform: translateX(-50%) rotate(360deg);
+// 	}
+// }
