@@ -122,7 +122,7 @@ const Clock = () => {
       console.log('intervalid: ', intervalid)
 
       return () => clearInterval(intervalid)
-  }, [])
+  },[hour, minute, second])
 
   return (
     <div className="clock">
