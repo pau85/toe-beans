@@ -103,43 +103,24 @@ body {
 .clock .hand.hour {
   width: 1.2px;
   height: 15px;
-  transform: translateX(-50%) rotate(0deg);
-  animation: defaultHourSpin 43200s linear infinite;
+  animation: dynamicHourSpin 43200s linear infinite;
 }
 .clock .hand.minute {
   width: 0.9px;
   height: 21px;
-  transform: translateX(-50%) rotate(0deg);
-  animation: defaultMinuteSpin 3600s linear infinite;
+  animation: dynamicMinuteSpin 3600s linear infinite;
 }
 .clock .hand.second {
   width: 0.6px;
   height: 24px;
-  transform: translateX(-50%) rotate(0deg);
-  animation: defaultSecondSpin 60s steps(60) infinite;
+  animation: dynamicSecondSpin 60s steps(60) infinite;
 }
-
-@keyframes defaultHourSpin {
-  from {
-    transform: translateX(-50%) rotate(0deg);
-  }
-  to {
-    transform: translateX(-50%) rotate(360deg);
-  }
+.clock .hand.dynamicHourSpin {
+  animation: dynamicHourSpin 43200s linear infinite;
 }
-@keyframes defaultMinuteSpin {
-  from {
-    transform: translateX(-50%) rotate(0deg);
-  }
-  to {
-    transform: translateX(-50%) rotate(360deg);
-  }
+.clock .hand.dynamicMinuteSpin {
+  animation: dynamicMinuteSpin 3600s linear infinite;
 }
-@keyframes defaultSecondSpin {
-  from {
-    transform: translateX(-50%) rotate(0deg);
-  }
-  to {
-    transform: translateX(-50%) rotate(360deg);
-  }
+.clock .hand.dynamicSecondSpin {
+  animation: dynamicSecondSpin 60s steps(60) infinite;
 }
