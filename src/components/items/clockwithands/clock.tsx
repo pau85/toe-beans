@@ -13,7 +13,7 @@ const Clock = () => {
 
   const createHourKeyFrames = (hour: number) => {
     const hour12 = hour % 12;
-    const hourDegree = (hour12/12) * 360;
+    const hourDegree = (hour12/12) * 360 + (minute/60) * 30;
 
     console.log('degree: ',hourDegree)
     
@@ -89,8 +89,8 @@ const Clock = () => {
       const hourHand = document.querySelector('.hand.hour') as HTMLElement;
       const minuteHand = document.querySelector('.hand.minute') as HTMLElement;
       const secondHand = document.querySelector('.hand.second') as HTMLElement;
-      const hourDegree = ((hour/12) * 360) + ((minute / 60) * 30) + 90;
-      const minuteDegree = ((minute/60) * 360) + ((second / 60) * 30) + 90;
+      const hourDegree = ((hour%12) / 12) * ((minute / 60) * 30) + 90;
+      const minuteDegree = ((minute/60) * 360) + ((second / 60) * 6) + 90;
       const secondDegree = ((second /60) * 360) + 90;
       console.log('hourHand: ', hourHand)
       console.log('hourDegree: ', hourDegree)

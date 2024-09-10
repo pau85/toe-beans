@@ -103,7 +103,7 @@ body {
 .clock .hand.hour {
   width: 1.2px;
   height: 15px;
-  animation: dynamicHourSpin 43200s linear infinite;
+  animation: dynamicHourSpin 3600s linear infinite;
 }
 .clock .hand.minute {
   width: 0.9px;
@@ -116,7 +116,7 @@ body {
   animation: dynamicSecondSpin 60s steps(60) infinite;
 }
 .clock .hand.dynamicHourSpin {
-  animation: dynamicHourSpin 43200s linear infinite;
+  animation: dynamicHourSpin 3600s linear infinite;
 }
 .clock .hand.dynamicMinuteSpin {
   animation: dynamicMinuteSpin 3600s linear infinite;
