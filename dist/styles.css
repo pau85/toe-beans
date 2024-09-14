@@ -1,14 +1,15 @@
 .full-clock {
   position: absolute;
   z-index: 2;
-  right: 18%;
+  right: 20%;
+  top: 10%;
 }
 
 .sleeping-butters {
   position: relative;
   z-index: 3;
   left: 30%;
-  top: 325px;
+  top: 350px;
 }
 
 .diningroom {
