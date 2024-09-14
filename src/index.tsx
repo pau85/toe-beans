@@ -11,7 +11,9 @@ if (root) {
 
   reactRoot.render(
     <React.StrictMode>
-      <App />
+      <div className="project-container">
+        <App />
+      </div>
     </React.StrictMode>
   );
 }

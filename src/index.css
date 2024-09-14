@@ -3,8 +3,16 @@ body {
   overflow: hidden;
 }
 
+.project-container {
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+}
+
 .livingroom-background, .middlelighting-background, .diningroom-background {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -12,7 +20,7 @@ body {
 }
 
 .livingroom-background {
-  background-image: url("../public/images/backgroundImages/livingroom-background-with-couch.png");
+  background-image: url("../public/images/backgroundImages/living-room-minus-entryway600x800.png");
 }
 
 .middlelighting-background {
@@ -21,7 +29,7 @@ body {
 }
 
 .diningroom-background {
-  background-image: url("../public/images/backgroundImages/dining-room.png");
+  background-image: url("../public/images/backgroundImages/dining-room600x800.png");
 }
 
 /*# sourceMappingURL=index.css.map */
