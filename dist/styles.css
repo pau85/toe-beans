@@ -1,15 +1,14 @@
 .full-clock {
   position: absolute;
   z-index: 2;
-  right: 21%;
-  top: -5px;
+  right: 18%;
 }
 
 .sleeping-butters {
   position: relative;
   z-index: 3;
   left: 30%;
-  top: 440px;
+  top: 250px;
 }
 
 .diningroom {
@@ -20,6 +19,12 @@
 .livingroom {
   position: absolute;
   z-index: 1;
+}
+
+.project-container {
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
 }
 
 body {
@@ -60,9 +65,9 @@ body {
 
 .clock {
   position: relative;
-  width: 60px;
-  height: 60px;
-  border: 1.5px solid green;
+  width: 70px;
+  height: 70px;
+  border: 1.75px solid green;
   border-radius: 50%;
   margin: 10px auto;
   color: red;
@@ -70,28 +75,28 @@ body {
 }
 .clock .number {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   text-align: center;
-  line-height: 15px;
+  line-height: 17.5px;
   font-weight: bold;
-  font-size: 6px;
+  font-size: 7px;
 }
 .clock .number3 {
-  bottom: 7.5px;
-  left: 42px;
+  bottom: 8.75px;
+  left: 49px;
 }
 .clock .number6 {
-  top: 49.5px;
-  left: 15px;
+  top: 57.75px;
+  left: 17.5px;
 }
 .clock .number9 {
-  bottom: 7.5px;
-  left: -12px;
+  bottom: 8.75px;
+  left: -14px;
 }
 .clock .number12 {
-  top: -4.5px;
-  left: 15px;
+  top: -5.25px;
+  left: 17.5px;
 }
 .clock .hand {
   position: absolute;
@@ -101,18 +106,18 @@ body {
   background: yellow;
 }
 .clock .hand.hour {
-  width: 1.2px;
-  height: 15px;
+  width: 1.4px;
+  height: 17.5px;
   animation: dynamicHourSpin 43200s linear infinite;
 }
 .clock .hand.minute {
-  width: 0.9px;
-  height: 21px;
+  width: 1.05px;
+  height: 24.5px;
   animation: dynamicMinuteSpin 3600s linear infinite;
 }
 .clock .hand.second {
-  width: 0.6px;
-  height: 24px;
+  width: 0.7px;
+  height: 28px;
   animation: dynamicSecondSpin 60s steps(60) infinite;
 }
 .clock .hand.dynamicHourSpin {
