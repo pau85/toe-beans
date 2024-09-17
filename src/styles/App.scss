@@ -1,29 +1,37 @@
-.full-clock {
-  position: absolute;
-  right: 19%;
-  top: 5%;
-  z-index: 2;
-}
 
-.sleeping-butters {
-  position:relative;
-  z-index: 3;
-  left: 30%;
-  top:323px;
+
+.project-container {
+  padding: 30px 90px;
+  width: 800px;
+  height: 600px;
+	position: absolute;
+	z-index: 1;
 }
 
 .diningroom {
-  position: absolute;
-  z-index: 0;
+	position: absolute;
+	object-fit: cover;
+	z-index: 2;
+
 }
 
 .livingroom {
-  position: absolute;
-  z-index: 1;
+	position: absolute;
+	object-fit: cover;
+	z-index: 3;
+
 }
 
-.project-container {
-  width: 800px;
-  height: 600px;
-  margin: 0 auto;
+.full-clock {
+	position: absolute;
+  left: 670px;
+  top: 50px;
+	z-index: 4;
+}
+
+.sleeping-butters{
+  position: absolute;
+  left: 350px;
+  top: 350px;
+	z-index: 4;
 }
