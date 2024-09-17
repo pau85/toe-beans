@@ -50,6 +50,14 @@ Sorry its been a while since the last update. I had a wedding party to plan (I g
 
 So the next update will be adding the real-time to it so it will display the current time of day based on timezone selection.
 
+9/13/2024
+Alright!! I have some cool updates to share. 
+1. The clock is officially working with the current time.
+2. The window size is set to 600x800 upon clicking on Butters on my website pau85.github.io. This was done so that the user can have a good experience visually upon first opening the application. I wanted to make sure that the clock and sleeping butters are set where they should be.
+3. I also added some other things like an ico file, some titles (for accessibility - trying to be as mindful as possible in this area) and I also expanded the image of the living room a bit vertically. I plan to have one other object in the image, which may or may not be a new component... until next time!
+![image](https://github.com/user-attachments/assets/8804c761-5e09-49e6-a615-62fdf0df7dd9)
+
+
 
 ## Learn More
 
