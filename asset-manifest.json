@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/toe-beans/static/css/main.652608b4.css",
-    "main.js": "/toe-beans/static/js/main.45f4240d.js",
+    "main.css": "/toe-beans/static/css/main.9858c686.css",
+    "main.js": "/toe-beans/static/js/main.01be232e.js",
     "static/media/1-butters-sleeping.png": "/toe-beans/static/media/1-butters-sleeping.5c5c81968de5a0f05bb9.png",
     "static/media/2-butters-sleeping.png": "/toe-beans/static/media/2-butters-sleeping.d9902cef96995f4c2f25.png",
     "static/media/middle-lighting.png": "/toe-beans/static/media/middle-lighting.6f8da51f82722b73d6ba.png",
     "static/media/living-room-minus-entryway600x800.png": "/toe-beans/static/media/living-room-minus-entryway600x800.028e6209b7bcd9447db6.png",
     "index.html": "/toe-beans/index.html",
-    "main.652608b4.css.map": "/toe-beans/static/css/main.652608b4.css.map",
-    "main.45f4240d.js.map": "/toe-beans/static/js/main.45f4240d.js.map"
+    "main.9858c686.css.map": "/toe-beans/static/css/main.9858c686.css.map",
+    "main.01be232e.js.map": "/toe-beans/static/js/main.01be232e.js.map"
   },
   "entrypoints": [
-    "static/css/main.652608b4.css",
-    "static/js/main.45f4240d.js"
+    "static/css/main.9858c686.css",
+    "static/js/main.01be232e.js"
   ]
 }
