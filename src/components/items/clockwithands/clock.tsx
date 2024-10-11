@@ -1,4 +1,4 @@
-import React, { useEffect} from 'react';
+import React, { useEffect, useCallback } from 'react';
 import './../../../styles/clock.scss';
 // import useDateTimeData from '../../../hooks/useDateTime';
 // import useHourKeyFrames from '../../../hooks/useHourKeyFrames'
@@ -11,8 +11,9 @@ const Clock = () => {
   const minute = new Date().getMinutes()
   const second = new Date().getSeconds()
 
-  const createHourKeyFrames = (hour: number) => {
-    const hour12 = hour % 12;
+  const createHourKeyFrames = useCallback((hour) => {
+    // Your keyframes logic here
+      const hour12 = hour % 12;
     const hourDegree = (hour12/12) * 360 + (minute/60) * 30;
 
     console.log('degree: ',hourDegree)
@@ -29,7 +30,8 @@ const Clock = () => {
     `;
     console.log('keyframes: ', keyframes)
     return keyframes;
-  }
+  }, [minute]); // Add necessary dependencies here
+
 
   const createMinuteKeyFrames = (minute: number) => {
     const minute60 = minute % 60;
@@ -122,7 +124,7 @@ const Clock = () => {
       console.log('intervalid: ', intervalid)
 
       return () => clearInterval(intervalid)
-  },[hour, minute, second])
+  },[hour, minute, second, createHourKeyFrames])
 
   return (
     <div className="clock">
