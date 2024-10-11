@@ -9,12 +9,10 @@ import SleepingButters from '../components/characters/butters/buttersSleepingMod
 import StandingButters from '../components/characters/butters/buttersStandingModule/ButtersStandingStill.tsx'
 function App() {
 
-  const [clickCount, setClickCount] = useState(0)
   const [zoom, setZoom] = useState(1)
 
   const handleZoomIn = () => {
     setZoom(prevZoom => prevZoom + 0.1)
-    setClickCount(prevCount => prevCount +1)
   }
   const shouldDisplaySleeping = Math.random() < 0.5
 
