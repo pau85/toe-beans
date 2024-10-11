@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { HashRouter as Router } from 'react-router-dom';
+import { motion } from 'framer-motion'
 import '../styles/App.scss';
 import LivingRoom from '../components/backgroundImages/LivingRoom.tsx';
 import DiningRoom from '../components/backgroundImages/DiningRoom.tsx'
@@ -7,10 +8,24 @@ import Clock from '../components/items/clockwithands/clock.tsx'
 import SleepingButters from '../components/characters/butters/buttersSleepingModule/SleepingButters.tsx';
 import StandingButters from '../components/characters/butters/buttersStandingModule/ButtersStandingStill.tsx'
 function App() {
+
+  const [clickCount, setClickCount] = useState(0)
+  const [zoom, setZoom] = useState(1)
+
+  const handleZoomIn = () => {
+    setZoom(prevZoom => prevZoom + 0.1)
+    setClickCount(prevCount => prevCount +1)
+  }
   const shouldDisplaySleeping = Math.random() < 0.5
+
+
+
   return (
     <Router>
-        <div className="project-container">
+        <motion.div 
+          className="project-container"
+          style={{ transform: `scale(${zoom})`, transformOrigin: 'center'}}
+          >
           <div className="livingroom">
             <LivingRoom />
           </div>
@@ -21,7 +36,7 @@ function App() {
             <Clock />
           </div>
           {shouldDisplaySleeping ? (
-          <div className='sleeping-butters'>
+          <div className='sleeping-butters' onClick={handleZoomIn}>
             <SleepingButters />
           </div>
           ) : (
@@ -29,7 +44,7 @@ function App() {
             <StandingButters />
           </div>
           )}
-        </div>
+        </motion.div>
     </Router>
   );
 }

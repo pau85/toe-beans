@@ -31,6 +31,13 @@
   z-index: 4;
 }
 
+.standing-butters {
+  position: absolute;
+  left: 250px;
+  top: 265px;
+  z-index: 4;
+}
+
 .diningroom {
   width: 800px; /* This will make the div as wide as your viewport */
   height: 600px; /* This will make the div as tall as your viewport */
